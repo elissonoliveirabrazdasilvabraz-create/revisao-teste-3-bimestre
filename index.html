@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revisão de Humanas - Tipos de Rios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <div class="logo">Geografia</div>
+        <div class="nav-links">
+          <a href="#tipos">Tipos</a>
+          <a href="#caracteristicas">Características</a>
+          <a href="#quiz">Revisão</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Revisão de Humanas</p>
+          <h1>Tipos de Rios</h1>
+          <p>
+            Entenda como os rios se classificam, suas principais características e
+            a importância deles para o ambiente e para as pessoas.
+          </p>
+          <button class="primary-btn" onclick="document.getElementById('tipos').scrollIntoView({behavior:'smooth'})">
+            Ver conteúdos
+          </button>
+        </div>
+
+        <div class="hero-card">
+          <h3>Resumo rápido</h3>
+          <ul>
+            <li>Rio de montanha: curso rápido e erosivo</li>
+            <li>Rio de planície: curso mais lento e meândrico</li>
+            <li>Rio temporário: seca em épocas secas</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="tipos" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Tipos</p>
+          <h2>Classificação dos rios</h2>
+        </div>
+
+        <div class="cards" id="riverCards"></div>
+      </section>
+
+      <section id="caracteristicas" class="section alt">
+        <div class="section-title">
+          <p class="eyebrow">Características</p>
+          <h2>O que observar na revisão</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-item">
+            <span>01</span>
+            <h3>Curso</h3>
+            <p>O rio pode ser de montanha, de planície ou de região semiárida, dependendo do relevo e da paisagem.</p>
+          </article>
+
+          <article class="info-item">
+            <span>02</span>
+            <h3>Regime</h3>
+            <p>Alguns rios têm água permanente, enquanto outros são sazonais e ficam secos em certos períodos do ano.</p>
+          </article>
+
+          <article class="info-item">
+            <span>03</span>
+            <h3>Uso</h3>
+            <p>Os rios fornecem água, transporte, energia e sustentam vida em comunidades e ecossistemas.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quiz" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Revisão</p>
+          <h2>Teste rápido</h2>
+        </div>
+
+        <div class="quiz-box">
+          <p id="question">Qual tipo de rio costuma ter curso mais rápido e erosivo?</p>
+          <div class="quiz-options">
+            <button class="option-btn" data-correct="true">Rio de montanha</button>
+            <button class="option-btn">Rio de planície</button>
+            <button class="option-btn">Rio temporário</button>
+            <button class="option-btn">Rio estuário</button>
+          </div>
+          <p id="answerFeedback" class="feedback"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Feito para revisão de humanas sobre tipos de rios.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
